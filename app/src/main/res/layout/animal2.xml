@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_color"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:text="Động vật          "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="254dp"
+
+        android:src="@drawable/voi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewq1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Thông tin:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textVieew2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Tên Việt Nam"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textVew2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_horizontal"
+                            android:text="Voi"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textVieewd2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Tên Latinh"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textVesw2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_horizontal"
+                            android:text="Elephas maximus"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textVieew3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Họ"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textVew4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_horizontal"
+                            android:text="Voi Elephantidae"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textVieew5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Bộ"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textVew6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_horizontal"
+                            android:text="Có vòi Proboscidea"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textVieew7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Lớp"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textVew8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left|center_horizontal"
+                            android:text="Thú"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewq9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Đặc điểm nhận dạng:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left|center_horizontal"
+                        android:text="Thân cỡ rất lớn, có thể dài tới 6m. Môi trên và mũi phát triển thành vòi dài chấm đất. Hai răng nanh lớn phát triển thành ngà. Voi đực có hai ngà, mồi ngà dài tới 150 cm, nặng 15 - 20 kg. Có 12 răng hàm, mỗi bên 3 mọc sít nhau gần như một cái. Da rất dày, lông thưa, dài, cứng màu nâu xám (đôi khi trắng)."
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        tools:ignore="MissingConstraints" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewq10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Sinh học, sinh thái:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left|center_horizontal"
+                        android:text="Sống ở rừng thưa, rừng thứ sinh pha tre nứa, xen lẫn các trảng cỏ trong các thung lũng hay các vùng đồi núi thấp. Độ cao phân bố lên tới 1500 - 1600m so với mặt biển. Thức ăn là cỏ, lá cây, cành cây nhỏ, măng tre nứa, cây chuối rừng. Chu kỳ sinh sản 4 - 5 năm 1 lứa, mỗi lứa đẻ 1 con, thời gian có chửa 21 - 22 tháng. Voi sơ sinh nặng 90 -100kg. cao tới 1 mét. Tuổi sinh sản từ 15 - 50 tuổi. Tuổi thọ 80 - 90 năm hoặc hơn."
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        tools:ignore="MissingConstraints" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewq11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left|center_horizontal"
+                            android:text="Giá Trị:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="MissingConstraints" />
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left|center_horizontal"
+                        android:text="Loài thú lớn quý hiếm của Việt Nam và thế giới và là loài duy nhật thuộc họ Voi Elephantidae ở Việt Nam Voi thuần hoá được ở nước ta, những năm trước đây voi được thuần hoá ở Buôn Đôn và nhiều nơi khác để phục vụ cho đời sống: kéo gỗ, thồ hàng, dùng trong chiến trận, nuôi trong các vườn thú, làm xiếc... Voi sống và ngà voi có giá trị xuất khẩu. Ngà voi dùng làm hàng mỹ nghệ quý."
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        tools:ignore="MissingConstraints" />
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
